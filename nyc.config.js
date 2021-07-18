@@ -2,8 +2,8 @@
 
 module.exports = {
   extends: '@istanbuljs/nyc-config-typescript',
-  branches: 65,
-  functions: 65,
-  lines: 65,
+  branches: 75,
+  functions: 75,
+  lines: 75,
   statements: 75,
 };
