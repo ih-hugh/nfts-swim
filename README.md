@@ -23,7 +23,8 @@
 - `npm run prepublish` - Hook for npm. Do all the checks before publishing your module.
 
 # Installation
-`yarn`
+1. `git clone git@github.com:HugoCe17/nfts-swim.git`
+2. `yarn`
 
 # License
 
