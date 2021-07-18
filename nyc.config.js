@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  extends: '@istanbuljs/nyc-config-typescript',
+  extends: '@istanbuljs/nyc-config-babel',
   branches: 75,
   functions: 75,
   lines: 75,

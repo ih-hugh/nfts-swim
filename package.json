@@ -37,6 +37,7 @@
   },
   "homepage": "https://github.com/HugoCe17/nfts-swim#readme",
   "devDependencies": {
+    "@istanbuljs/nyc-config-babel": "^3.0.0",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
     "babel-plugin-add-module-exports": "^1.0.0",
