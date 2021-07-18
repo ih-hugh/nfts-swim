@@ -1,7 +1,7 @@
 {
-  "name": "npm-module-boilerplate",
-  "version": "1.0.0",
-  "description": "Boilerplate for npm modules with ES6 features and syntax",
+  "name": "nfts-swim",
+  "version": "0.0.1",
+  "description": "Create Pools to lock in NFTs and create ERC20 tokens!",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/flexdinesh/npm-module-boilerplate.git"
+    "url": "git+https://github.com/HugoCe17/nfts-swim.git"
   },
   "keywords": [
     "boilerplate",
@@ -30,12 +30,12 @@
     "node",
     "javascript"
   ],
-  "author": "Dinesh Pandiyan <flexdinesh@gmail.com>",
+  "author": "Hugo Cedano <HugoCe17@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/flexdinesh/npm-module-boilerplate/issues"
+    "url": "https://github.com/HugoCe17/nfts-swim/issues"
   },
-  "homepage": "https://github.com/flexdinesh/npm-module-boilerplate#readme",
+  "homepage": "https://github.com/HugoCe17/nfts-swim#readme",
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.0.1",
