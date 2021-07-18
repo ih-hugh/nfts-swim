@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended",
+    "plugin:mocha/recommended",
+    "prettier"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "plugins": ["mocha"],
+  "rules": {
+    "comma-dangle": ["error", "only-multiline"],
+    "no-console": [0],
+    "node/no-unsupported-features/es-syntax": [0],
+    "mocha/no-setup-in-describe": [0],
+    "no-unused-vars": [1]
+  }
+}
