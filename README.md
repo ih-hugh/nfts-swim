@@ -1,6 +1,6 @@
 # NFTs Swim
 
-
+[![Build Status](https://travis-ci.com/HugoCe17/nfts-swim.svg?token=oLdDv4FzLdY1YBf3ssUo&branch=master)](https://travis-ci.com/HugoCe17/nfts-swim)
 
 # Features
 
