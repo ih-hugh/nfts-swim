@@ -1,0 +1,282 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_addr",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_priceFeed",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "ChainlinkPriceFeedAddr",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ID",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "NFTShardERC721",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "poolTokenName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "poolSymbol",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "hash",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "token",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "totalShards",
+						"type": "uint256"
+					}
+				],
+				"name": "createPool",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "listPools",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "hash",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "poolAddress",
+								"type": "address"
+							},
+							{
+								"internalType": "address",
+								"name": "poolOwner",
+								"type": "address"
+							}
+						],
+						"internalType": "struct NFTLegoFactory.Pool[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/nftlego/NFTLegoFactory.sol": "NFTLegoFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+				"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+			"keccak256": "0xca0c2396dbeb3503b51abf4248ebf77a1461edad513c01529df51850a012bee3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://991b44ff44e0496e8554a90f4c0512c28faed45104d40430019f3c67ea67740e",
+				"dweb:/ipfs/Qmc3nRapVbcctELoZS5qe17zLkFB3bETBfwzCTMF1CSuGE"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x5f02220344881ce43204ae4a6281145a67bc52c2bb1290a791857df3d19d78f5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://24427744bd3e6cb73c17010119af12a318289c0253a4d9acb8576c9fb3797b08",
+				"dweb:/ipfs/QmTLDqpKRBuxGxRAmjgXt9AkXyACW3MtKzi7PYjm5iMfGC"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC721/ERC721Holder.sol": {
+			"keccak256": "0xdb2133d55b8f3a94313af8f4371ae0501a58e412d471b03d8581214c5ea2ce33",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cea1e4bf769f27c8c9c1442f1518b49ef6c8b71a4bd4ce88353da9e9a8ba1704",
+				"dweb:/ipfs/QmR1b8sj7fxgeHqDksV4GYTjZS1qajWC3yg9VCMUJus2bF"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
+			"keccak256": "0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1",
+				"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f",
+				"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96"
+			]
+		},
+		"@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+			"keccak256": "0x8bbbc2f5c10065ee272592ae0a7a6ceb23de2fbd81564ee0bb015ecf404d5f61",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b95e56c1640d0ef789fc5c16269e141e992f6c8ac97cc6d377bd3825e9cab182",
+				"dweb:/ipfs/QmVzaxJZY51EhagrcNnkxoU6Uq17RhATe7aHvtkC6wUkgK"
+			]
+		},
+		"contracts/nftlego/Compound.sol": {
+			"keccak256": "0x103e1c41860f8fbe19871dec3a5bb4909d80e512f9144d9d9e0b56154d00e225",
+			"urls": [
+				"bzz-raw://88ecc2870e58c1868159b0c10f88028f8d8bb1c443d98e1d33dce57b7e71926a",
+				"dweb:/ipfs/QmNQmq1eNdwjMfhTSx5yXh9xbPG2jrTE5MLuq21ZPGzibF"
+			]
+		},
+		"contracts/nftlego/IChainlinkPriceFeed.sol": {
+			"keccak256": "0x7afcf9253a5c4a9c70178ec9e90b9f1c601efa72854cd40b55d86a161214f57e",
+			"urls": [
+				"bzz-raw://efebdc27ac35d798ce19aeac154996960f52fdb56b59e37a0d845e5513f253ac",
+				"dweb:/ipfs/QmTkaZAwVrhLgWeP8AuHQzUzskh6FqqBv7UMDjo313RDBJ"
+			]
+		},
+		"contracts/nftlego/IRaribleExchange.sol": {
+			"keccak256": "0x7a7ea1f65fc59f4e2aa2e6e4644dca1ce4db63ec61e4be65a236e3471c5cd3ee",
+			"urls": [
+				"bzz-raw://9020858a9f1da7b550157fe6f4448ec354f7e2a2dd3becbdd403dd2f40da29b8",
+				"dweb:/ipfs/QmbFDWzboYUwGP6AbrsuDLE3enKrGaAkWiR4pj6G8Gry2d"
+			]
+		},
+		"contracts/nftlego/NFTLegoFactory.sol": {
+			"keccak256": "0x0b48b29c8b8d6f346b0f5bdcb36c0acdb32b78ddd98169b150ceb998f87a9e96",
+			"urls": [
+				"bzz-raw://f2378b6fd8238ef84b2befe641e41fdd2b7277eec395553ea220d37ccc6f2697",
+				"dweb:/ipfs/QmVqpaBxy7ddmXZHTjAVA4u92kAzaQKJgTRWRpfuzmTAwC"
+			]
+		},
+		"contracts/nftlego/NFTLegoPool.sol": {
+			"keccak256": "0xae80f26bec61c7d394fbe82a3e069ea7df68684c9e09c582ef2d5756118bce88",
+			"urls": [
+				"bzz-raw://2741d009673f72a8005c1c27107ac23d7654f63d46c4f595f1f3588c847425de",
+				"dweb:/ipfs/QmNpuyinvyeTD9QLDAqgxdYiNNRxRsTRYLnYQxABCty4M8"
+			]
+		},
+		"contracts/nftlego/NFTShardERC20.sol": {
+			"keccak256": "0x815ac233bb00df47fa504ce8d6fde3899d7985c45ff942d4761726b7819f1e16",
+			"urls": [
+				"bzz-raw://a7f7c6bc77c3263d54f313cd099f12446d85a5c74e187e20f708e9f0e75f05b0",
+				"dweb:/ipfs/QmauiwQkdp86CSdkDwSy1yVPHvXtF9GchC5qENcafeUPP9"
+			]
+		},
+		"contracts/nftlego/RaribleERC721.sol": {
+			"keccak256": "0x87c9c8309755ba7c5741b3aae4e5a7adfb8e03965f3d6abda03846a506d85406",
+			"urls": [
+				"bzz-raw://06d28154b20d3943738cbc0f57a4504a9e6a7097fead1424eaa86052977f734f",
+				"dweb:/ipfs/QmccqyxfyVXatQXkae4C1Z7F6M5maWGsK98cRs5cUJsjRt"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.7.6+commit.7338295f"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/nftlego/Compound.sol": "Compound"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/nftlego/Compound.sol": {
+			"keccak256": "0x103e1c41860f8fbe19871dec3a5bb4909d80e512f9144d9d9e0b56154d00e225",
+			"urls": [
+				"bzz-raw://88ecc2870e58c1868159b0c10f88028f8d8bb1c443d98e1d33dce57b7e71926a",
+				"dweb:/ipfs/QmNQmq1eNdwjMfhTSx5yXh9xbPG2jrTE5MLuq21ZPGzibF"
+			]
+		}
+	},
+	"version": 1
+}
